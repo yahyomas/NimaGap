@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "846983925566",
+    "firebase_url": "https://nimagap.firebaseio.com",
+    "project_id": "nimagap",
+    "storage_bucket": "nimagap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846983925566:android:69fe9c3dfd294c849d666f",
+        "android_client_info": {
+          "package_name": "com.yahyomas.nimagap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846983925566-086cjpl45ou8bo8utcj9ec17egv0f8qc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yahyomas.nimagap",
+            "certificate_hash": "d4b75f10bd486384759e74cdce1eb5237aaf0476"
+          }
+        },
+        {
+          "client_id": "846983925566-0le69mocurj9r5gq01f3cd27741f8rhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHtck8iPpvkY4MspspPVwq1TlJq-2axmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846983925566-0le69mocurj9r5gq01f3cd27741f8rhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
