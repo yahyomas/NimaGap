@@ -1,4 +1,4 @@
-package com.yahyomas.nimagap
+package com.yahyomas.nimagap.chat
 
 import android.content.Intent
 import android.net.Uri
@@ -22,6 +22,9 @@ import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.UploadTask
+import com.yahyomas.nimagap.R
+import com.yahyomas.nimagap.signin.SignInActivity
+import com.yahyomas.nimagap.userslist.User
 import java.util.*
 
 class ChatActivity : AppCompatActivity() {

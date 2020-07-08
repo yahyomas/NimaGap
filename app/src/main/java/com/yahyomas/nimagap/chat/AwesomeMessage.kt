@@ -1,4 +1,4 @@
-package com.yahyomas.nimagap
+package com.yahyomas.nimagap.chat
 
 class AwesomeMessage {
     var text: String? = null

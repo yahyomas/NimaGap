@@ -1,4 +1,4 @@
-package com.yahyomas.nimagap
+package com.yahyomas.nimagap.userslist
 
 class User {
     var name: String? = null

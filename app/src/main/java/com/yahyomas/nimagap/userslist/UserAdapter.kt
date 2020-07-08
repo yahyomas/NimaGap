@@ -1,4 +1,4 @@
-package com.yahyomas.nimagap
+package com.yahyomas.nimagap.userslist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
+import com.yahyomas.nimagap.R
 import java.util.*
 
 class UserAdapter(private val users: ArrayList<User>) :
@@ -24,7 +25,10 @@ class UserAdapter(private val users: ArrayList<User>) :
     override fun onCreateViewHolder(@NonNull viewGroup: ViewGroup, i: Int): UserViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.user_item, viewGroup, false)
-        return UserViewHolder(view, listener)
+        return UserViewHolder(
+            view,
+            listener
+        )
     }
 
     override fun onBindViewHolder(@NonNull userViewHolder: UserViewHolder, i: Int) {

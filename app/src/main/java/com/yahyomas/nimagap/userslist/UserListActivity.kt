@@ -1,4 +1,4 @@
-package com.yahyomas.nimagap
+package com.yahyomas.nimagap.userslist
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.yahyomas.nimagap.chat.ChatActivity
+import com.yahyomas.nimagap.R
+import com.yahyomas.nimagap.signin.SignInActivity
 import kotlin.collections.ArrayList
 
 class UserListActivity : AppCompatActivity() {
@@ -51,7 +54,8 @@ class UserListActivity : AppCompatActivity() {
                 ) {
                     val user = dataSnapshot.getValue(User::class.java)
                     if (!user!!.id.equals(auth!!.currentUser!!.uid)) {
-                        user!!.avatarMockUpResource=R.drawable.ic_person_black_24dp
+                        user!!.avatarMockUpResource=
+                            R.drawable.ic_person_black_24dp
                         userArrayList!!.add(user)
                         userAdapter!!.notifyDataSetChanged()
                     }
@@ -88,7 +92,8 @@ class UserListActivity : AppCompatActivity() {
         userAdapter = UserAdapter(userArrayList)
         userRecyclerView!!.setLayoutManager(userLayoutManager)
         userRecyclerView!!.setAdapter(userAdapter)
-        userAdapter!!.setOnUserClickListener(object : UserAdapter.OnUserClickListener {
+        userAdapter!!.setOnUserClickListener(object :
+            UserAdapter.OnUserClickListener {
             override fun onUserClick(position: Int) {
                 goToChat(position)
             }
