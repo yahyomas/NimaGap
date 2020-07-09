@@ -8,7 +8,7 @@
     tools:context=".signin.SignInActivity">
 
     <ImageView
-        android:src="@drawable/logo"
+        android:src="@drawable/chat_image_from_pixabey"
         android:layout_marginTop="8dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="150dp"
